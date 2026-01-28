@@ -1,0 +1,49 @@
+
+
+<ul class="list-group">
+    <li 
+    *ngFor="let todo of todoArr"
+    class="list-group-item">
+    {{todo.title}} <strong>{{todo.completed}}</strong>
+</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <ul class="list-group">
+    <li
+    *ngFor="let todo of todosArr"
+    class="list-group-item">
+        {{todo.title}}<strong> {{todo.completed}}</strong>
+</li>
+</ul> -->
+
+<!-- 
+<ul class="list-group" *ngIf="todosArr$ | async as todosArr ; else Notodos">
+    <li 
+    *ngFor="let todo of todosArr"
+    class="list-group-item">
+{{todo.title}} <strong>{{todo.completed}}</strong>
+</li>
+</ul>
+
+<ng-template #Notodos>
+ <p class="alert alert-primary">No Todos</p>
+</ng-template> -->

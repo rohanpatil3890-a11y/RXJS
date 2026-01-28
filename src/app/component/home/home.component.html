@@ -1,0 +1,39 @@
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+        <app-one>
+
+        </app-one>
+
+
+    </div>
+</div>
+
+
+<ul class="list-group">
+    <li *ngFor="let even of eventNumArr" class="list-group-item">
+        {{even}}
+    </li>
+</ul>
+
+<hr>
+
+<ul class="list-group">
+    <li *ngFor="let odd of oddArr" class="list-group-item">
+        {{odd}}
+    </li>
+</ul>
+
+<hr>
+<ul class="list-group">
+    <li *ngFor="let div of divisable" class="list-group-item">
+        {{div}}
+    </li>
+</ul>
+
+<hr>
+
+<ul class="list-group">
+    <li *ngFor="let p of prime" class="list-group-item">
+        {{p}}
+    </li>
+</ul>
