@@ -22,32 +22,6 @@ export class CompletedComponent implements OnInit {
        this.todoArr = res
     })
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    // this._todoservice.getCompletedTodos()
-    // .subscribe({
-    //   next : data => {
-    //    this.todoArr = data
-        
-    //   },
-    //   error : err =>{
-    //     console.log(err);
-        
-    //   }
-    // })
   }
 
 }
