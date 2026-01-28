@@ -24,4 +24,8 @@ export class CompletedComponent implements OnInit {
     
   }
 
+  trackById(index : number, todo : Itodos){
+    return todo.id
+  }
+
 }

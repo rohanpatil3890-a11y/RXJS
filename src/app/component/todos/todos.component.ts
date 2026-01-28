@@ -24,42 +24,10 @@ export class TodosComponent implements OnInit {
       
     })
 
+  }
 
-
-
-
-
-
-
-
-
-
-// this._todoservice.getodos()
-// .subscribe({
-//   next : data => {
-//    this.todosArr = data
-    
-//   },
-//   error : err => {
-//     console.log(err);
-    
-//   }
-// })
-
-//  this.todosArr$ = this._todoservice.getodos()
-
-// .subscribe({
-//   next : data => {
-//     console.log(data);
-//     this.todosArr = data
-    
-//   },
-//   error : err => {
-//     console.log(err);
-    
-//   }
-// })
-
+  trackById (index : number, todo : Itodos){
+    return todo.id
   }
 
 }

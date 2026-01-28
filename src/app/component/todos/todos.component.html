@@ -2,7 +2,8 @@
 
 <ul class="list-group">
     <li 
-    *ngFor="let todo of todoArr"
+    
+    *ngFor="let todo of todoArr trackBy : trackById"
     class="list-group-item">
     {{todo.title}} <strong>{{todo.completed}}</strong>
 </li>

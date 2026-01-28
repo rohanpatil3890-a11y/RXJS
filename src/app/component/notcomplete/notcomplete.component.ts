@@ -21,22 +21,10 @@ export class NotcompleteComponent implements OnInit {
     this.notcompleteArr = res
    })
 
+  }
 
-
-    
-
-    // this._todosservice.notcompolated()
-    // .subscribe({
-    //   next : data => {
-       
-    //     this.notcompleteArr = data
-        
-    //   },
-    //   error : err =>{
-    //     console.log(err);
-        
-    //   }
-    // })
+  trackById(index : number, todo: Itodos){
+    return todo.id
   }
 
 

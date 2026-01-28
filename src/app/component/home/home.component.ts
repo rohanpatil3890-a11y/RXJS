@@ -1,6 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 
-import { interval } from 'rxjs/internal/observable/interval';
 import { Subscription } from 'rxjs/internal/Subscription';
 import { OfService } from 'src/app/service/of.service';
 
@@ -13,45 +12,42 @@ import { OfService } from 'src/app/service/of.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private ofService : OfService) { }
+  constructor(private ofService: OfService) { }
 
   interSub !: Subscription
 
-  eventNumArr : Array<string> = []
-  divisable : Array<string> = []
+  eventNumArr: Array<string> = []
+  divisable: Array<string> = []
 
-  oddArr : Array<string> = []
- prime : Array<string> = []
+  oddArr: Array<string> = []
+  prime: Array<string> = []
 
 
   ngOnInit(): void {
 
-this.ofService.ofEvent.subscribe(res => {
-  
-   this.eventNumArr.push(res)
-   
-   
-})
+    this.ofService.ofEvent.subscribe(res => {
 
-this.ofService.ofOdd$.subscribe(res => {
-  
-   this.oddArr.push(res)
-   
-   
-})
-
-this.ofService.ofDivisible$.subscribe(res => {
-  this.divisable.push(res)
-})
+      this.eventNumArr.push(res)
 
 
-this.ofService.OfPrime$.subscribe(res =>{
-this.prime.push(res)
-})
+    })
+
+    this.ofService.ofOdd$.subscribe(res => {
+
+      this.oddArr.push(res)
 
 
+    })
 
-  
+    this.ofService.ofDivisible$.subscribe(res => {
+      this.divisable.push(res)
+    })
+
+
+    this.ofService.OfPrime$.subscribe(res => {
+      this.prime.push(res)
+    })
+
   }
 
 
